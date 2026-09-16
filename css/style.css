@@ -384,46 +384,52 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
 .social-section { padding: 90px 0; background: var(--sand); }
 .social-section h2 { color: var(--navy); font-size: clamp(1.8rem, 3vw, 2.6rem); }
 .social-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 36px;
 }
-.social-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 26px 22px;
-  box-shadow: var(--shadow);
+.social-btn {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  transition: transform .15s ease, box-shadow .15s ease;
-  border-top: 4px solid var(--teal);
+  align-items: center;
+  gap: 10px;
+  width: 92px;
+  text-align: center;
 }
-.social-card:hover { transform: translateY(-4px); box-shadow: 0 16px 34px rgba(36,35,79,.2); }
-.social-icon {
-  width: 52px; height: 52px;
+.social-btn-icon {
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--teal);
   color: var(--white);
-  margin-bottom: 6px;
+  box-shadow: 0 8px 16px rgba(36,35,79,.25), 0 0 0 4px var(--white), 0 0 0 6px currentColor;
+  transition: transform .25s cubic-bezier(.34,1.56,.64,1), box-shadow .25s ease;
 }
-.social-label { font-family: var(--font-display); font-weight: 400; letter-spacing: .01em; font-size: 1.1rem; color: var(--ink); text-transform: none; }
-.social-sub { font-size: .88rem; color: #5c6b78; }
+.social-btn-label {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: .02em;
+  font-size: .8rem;
+  color: var(--navy);
+  text-transform: none;
+}
+.social-btn:hover .social-btn-icon,
+.social-btn:focus-visible .social-btn-icon {
+  transform: translateY(-8px) scale(1.1) rotate(-6deg);
+  box-shadow: 0 16px 26px rgba(36,35,79,.35), 0 0 0 4px var(--white), 0 0 0 6px currentColor;
+}
 
-.social-card.fb .social-icon { background: #1877f2; }
-.social-card.fb { border-top-color: #1877f2; }
-.social-card.ig .social-icon { background: linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4); }
-.social-card.ig { border-top-color: #dd2a7b; }
-.social-card.loc .social-icon { background: var(--pink); }
-.social-card.loc { border-top-color: var(--pink); }
-.social-card.rev .social-icon { background: var(--yellow-dark); }
-.social-card.rev { border-top-color: var(--yellow-dark); }
-.social-card.survey .social-icon { background: var(--navy); }
-.social-card.survey { border-top-color: var(--navy); }
-.social-card.wa .social-icon { background: #25d366; }
-.social-card.wa { border-top-color: #25d366; }
+.social-btn.fb .social-btn-icon { background: #1877f2; color: #1877f2; }
+.social-btn.ig .social-btn-icon { background: linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4); color: #dd2a7b; }
+.social-btn.loc .social-btn-icon { background: var(--pink); color: var(--pink); }
+.social-btn.rev .social-btn-icon { background: var(--yellow-dark); color: var(--yellow-dark); }
+.social-btn.survey .social-btn-icon { background: var(--navy); color: var(--navy); }
+.social-btn.wa .social-btn-icon { background: #25d366; color: #25d366; }
 
 /* ===== Footer ===== */
 .site-footer {
@@ -462,7 +468,6 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
 @media (max-width: 860px) {
   .about-inner { grid-template-columns: 1fr; text-align: center; }
   .about-badges { justify-content: center; }
-  .social-grid { grid-template-columns: repeat(2, 1fr); }
   .menu-grid { grid-template-columns: 1fr; }
 }
 
@@ -483,7 +488,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
   .main-nav.open { transform: translateY(0); }
   .nav-cta { text-align: center; }
   .nav-toggle { display: flex; }
-  .social-grid { grid-template-columns: 1fr; }
+  .social-btn { width: 78px; }
+  .social-btn-icon { width: 56px; height: 56px; }
   .hero { padding: 50px 0 30px; }
   .mascot-chip { width: 76px; height: 76px; }
   .menu-panel { padding: 20px; }
