@@ -5,26 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Costeñito Saltillo Norte | Mariscos con sabor de playa</title>
 <meta name="description" content="Costeñito Saltillo Norte: mariscos frescos y sabor de playa en Saltillo. Consulta el menú, síguenos en redes, encuéntranos y pide por WhatsApp.">
-<link rel="icon" href="assets/crab-icon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/logo-costenito-diamante.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Aviso para quien edite el sitio -->
-<!-- Logo: reemplaza assets/crab-icon.svg (y el .logo-mark del header/hero) por el logo real cuando esté disponible. -->
-<!-- Menú: reemplaza assets/menu-placeholder.pdf por el PDF real, y edita el arreglo menuData en js/script.js con la carta real. -->
+<!-- Edita el arreglo menuData en js/script.js si cambia la carta real de Costeñito. -->
 
 <header class="site-header" id="top">
   <div class="container header-inner">
     <a class="brand" href="#top">
-      <img src="assets/crab-icon.svg" alt="" class="brand-icon" width="44" height="44">
-      <span class="brand-text">
-        <strong>Costeñito</strong>
-        <small>Saltillo Norte</small>
-      </span>
+      <img src="assets/logo-costenito.jpg" alt="Costeñito - Seafood, Drinks and More" class="brand-logo">
+      <span class="brand-text">Saltillo Norte</span>
     </a>
 
     <nav class="main-nav" id="mainNav">
@@ -44,12 +39,11 @@
 <main>
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-waves" aria-hidden="true"></div>
-    <div class="container hero-inner">
-      <img src="assets/crab-icon.svg" alt="" class="hero-crab" width="180" height="144">
+    <div class="hero-inner container">
+      <img src="assets/crab-icon.svg" alt="" class="hero-crab" width="150" height="120">
       <p class="eyebrow">🦀 Mariscos &amp; sabor costeño</p>
       <h1>¡Bienvenido a<br><span>Costeñito Saltillo Norte!</span></h1>
-      <p class="hero-sub">Frescura del mar, sazón de la costa y ese ambiente playero que se disfruta en cada visita.</p>
+      <p class="hero-sub">Frescura del mar, sazón de la costa y ese ambiente playero que se disfruta en cada visita. El lugar para ponerse bien playa.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#menu">Ver el menú</a>
         <a class="btn btn-whatsapp" href="https://wa.me/528444320777?text=Hola%2C%20quiero%20hacer%20un%20pedido%20%F0%9F%A6%80" target="_blank" rel="noopener">
@@ -58,15 +52,25 @@
         </a>
       </div>
     </div>
+    <div class="scallop-border scallop-bottom" aria-hidden="true"></div>
+  </section>
+
+  <!-- MASCOTAS -->
+  <section class="mascots-strip" aria-hidden="true">
+    <div class="container mascots-row">
+      <img src="assets/mascot-lobster.png" alt="" class="mascot-chip">
+      <img src="assets/mascot-octopus.png" alt="" class="mascot-chip">
+      <img src="assets/mascot-oyster.png" alt="" class="mascot-chip">
+    </div>
   </section>
 
   <!-- NOSOTROS -->
   <section class="about" id="nosotros">
     <div class="container about-inner">
       <div class="about-text">
-        <p class="eyebrow">Nuestra historia</p>
+        <p class="eyebrow">Una idea bien playa</p>
         <h2>Sabor de playa, aquí en Saltillo</h2>
-        <p>En Costeñito Saltillo Norte llevamos hasta tu mesa el sabor auténtico de la costa: mariscos frescos, cocteles bien cargados y esa sazón que te transporta a la playa sin salir de la ciudad. Ven a comer con la familia, con los amigos o pide a domicilio, ¡así de fácil!</p>
+        <p>A principios del 2006, en medio de un ambiente playero nació "El Costeñito" con un carrito para cocinar tacos de mariscos y una fresca palapa. Hoy, casi 20 años después, seguimos llevando hasta tu mesa el sabor auténtico de la costa: mariscos frescos, cocteles bien cargados y esa sazón que te transporta a la playa sin salir de la ciudad.</p>
         <ul class="about-badges">
           <li>🦐 Mariscos frescos</li>
           <li>🌶️ Sazón costeña</li>
@@ -83,22 +87,29 @@
 
   <!-- MENU -->
   <section class="menu-section" id="menu">
+    <div class="scallop-border scallop-top" aria-hidden="true"></div>
     <div class="container">
       <p class="eyebrow center">Nuestra carta</p>
       <h2 class="center">Menú</h2>
       <p class="center menu-intro">Descarga la carta completa en PDF o revisa el menú digital aquí abajo.</p>
 
       <div class="menu-pdf-cta">
-        <a class="btn btn-primary" href="assets/menu-placeholder.pdf" target="_blank" rel="noopener" download>
+        <a class="btn btn-primary" href="assets/menu-costenito.pdf" target="_blank" rel="noopener" download>
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42l2.3 2.3V4a1 1 0 0 1 1-1zM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/></svg>
           Descargar menú en PDF
         </a>
       </div>
 
-      <div class="menu-sample-flag">📋 Menú digital de muestra — se actualizará con la carta real de Costeñito Saltillo Norte.</div>
+      <p class="menu-note">Precios en pesos mexicanos. Pueden variar sin previo aviso — consulta el PDF oficial para la versión más actual.</p>
 
       <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Categorías del menú"></div>
       <div class="menu-panels" id="menuPanels"></div>
+    </div>
+    <div class="scallop-border scallop-bottom" aria-hidden="true"></div>
+    <div class="menu-social-bar">
+      <span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.85.07 1.25.06 2.1.25 2.85.55.77.3 1.42.7 2.06 1.34.64.64 1.04 1.29 1.34 2.06.3.75.49 1.6.55 2.85.07 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.06 1.25-.25 2.1-.55 2.85-.3.77-.7 1.42-1.34 2.06-.64.64-1.29 1.04-2.06 1.34-.75.3-1.6.49-2.85.55-1.25.07-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.25-.06-2.1-.25-2.85-.55-.77-.3-1.42-.7-2.06-1.34-.64-.64-1.04-1.29-1.34-2.06-.3-.75-.49-1.6-.55-2.85C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.06-1.25.25-2.1.55-2.85.3-.77.7-1.42 1.34-2.06C4.8 1.6 5.45 1.2 6.22.9c.75-.3 1.6-.49 2.85-.55C10.32 2.2 10.72 2.2 12 2.2z"/></svg> @costenitosalt</span>
+      <img src="assets/logo-costenito-diamante.png" alt="Costeñito" class="menu-social-logo">
+      <span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.5l.5-3h-3V8.3c0-.87.24-1.46 1.5-1.46H16.5V4.2C16.24 4.17 15.36 4.1 14.34 4.1c-2.13 0-3.59 1.3-3.59 3.68V10.5H8.24v3h2.51V21h2.75z"/></svg> Costeñito Saltillo</span>
     </div>
   </section>
 
@@ -164,13 +175,10 @@
 <footer class="site-footer" id="contacto">
   <div class="container footer-inner">
     <a class="brand" href="#top">
-      <img src="assets/crab-icon.svg" alt="" class="brand-icon" width="36" height="36">
-      <span class="brand-text light">
-        <strong>Costeñito</strong>
-        <small>Saltillo Norte</small>
-      </span>
+      <img src="assets/logo-costenito-diamante.png" alt="Costeñito" class="brand-logo footer-logo">
     </a>
     <p class="footer-tag">Sabor de mar, sazón de la costa. 🦀🌊</p>
+    <p class="footer-address">Blvd. Venustiano Carranza 2302, Col. Puerta del Sol, Saltillo, Coah. · Tel. 844 432 0777</p>
     <div class="footer-links">
       <a href="https://www.facebook.com/share/1bPDqjSc91/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
       <a href="https://www.instagram.com/costenitosalt/" target="_blank" rel="noopener">Instagram</a>
