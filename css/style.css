@@ -175,6 +175,15 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
   flex-direction: column;
   align-items: center;
 }
+.hero-logo {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--white);
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+  margin-bottom: 14px;
+}
 .hero-crab {
   animation: bob 3.5s ease-in-out infinite;
   margin-bottom: 8px;
