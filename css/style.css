@@ -407,9 +407,11 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
   justify-content: center;
   background: var(--teal);
   color: var(--white);
-  box-shadow: 0 8px 16px rgba(36,35,79,.25), 0 0 0 4px var(--white), 0 0 0 6px currentColor;
+  --ring: var(--teal);
+  box-shadow: 0 8px 16px rgba(36,35,79,.25), 0 0 0 4px var(--white), 0 0 0 6px var(--ring);
   transition: transform .25s cubic-bezier(.34,1.56,.64,1), box-shadow .25s ease;
 }
+.social-btn-icon svg { fill: var(--white); }
 .social-btn-label {
   font-family: var(--font-display);
   font-weight: 400;
@@ -421,15 +423,15 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
 .social-btn:hover .social-btn-icon,
 .social-btn:focus-visible .social-btn-icon {
   transform: translateY(-8px) scale(1.1) rotate(-6deg);
-  box-shadow: 0 16px 26px rgba(36,35,79,.35), 0 0 0 4px var(--white), 0 0 0 6px currentColor;
+  box-shadow: 0 16px 26px rgba(36,35,79,.35), 0 0 0 4px var(--white), 0 0 0 6px var(--ring);
 }
 
-.social-btn.fb .social-btn-icon { background: #1877f2; color: #1877f2; }
-.social-btn.ig .social-btn-icon { background: linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4); color: #dd2a7b; }
-.social-btn.loc .social-btn-icon { background: var(--pink); color: var(--pink); }
-.social-btn.rev .social-btn-icon { background: var(--yellow-dark); color: var(--yellow-dark); }
-.social-btn.survey .social-btn-icon { background: var(--navy); color: var(--navy); }
-.social-btn.wa .social-btn-icon { background: #25d366; color: #25d366; }
+.social-btn.fb .social-btn-icon { background: #1877f2; --ring: #1877f2; }
+.social-btn.ig .social-btn-icon { background: linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4); --ring: #dd2a7b; }
+.social-btn.loc .social-btn-icon { background: var(--pink); --ring: var(--pink); }
+.social-btn.rev .social-btn-icon { background: var(--yellow-dark); --ring: var(--yellow-dark); }
+.social-btn.survey .social-btn-icon { background: var(--navy); --ring: var(--navy); }
+.social-btn.wa .social-btn-icon { background: #25d366; --ring: #25d366; }
 
 /* ===== Footer ===== */
 .site-footer {
