@@ -429,9 +429,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
 .social-btn.fb .social-btn-icon { background: #1877f2; --ring: #1877f2; }
 .social-btn.ig .social-btn-icon { background: linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4); --ring: #dd2a7b; }
 .social-btn.loc .social-btn-icon { background: var(--pink); --ring: var(--pink); }
-.social-btn.rev .social-btn-icon { background: var(--yellow-dark); --ring: var(--yellow-dark); }
 .social-btn.survey .social-btn-icon { background: var(--navy); --ring: var(--navy); }
-.social-btn.wa .social-btn-icon { background: #25d366; --ring: #25d366; }
+.social-btn.billing .social-btn-icon { background: #25d366; --ring: #25d366; }
 
 /* ===== Footer ===== */
 .site-footer {
